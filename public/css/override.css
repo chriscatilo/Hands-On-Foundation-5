@@ -1,6 +1,48 @@
 /* ------------------------------- PHONE DEFAULT ------------------------------- */
+header {
+    background-color: #f4f4f4;
+    padding: 1em 0 .5em 0;
+}
 
+div.logo {
+    width: 104px;
+    height: 68px;
+    background-repeat: no-repeat;
+    margin-top: .5em;
+    float: left;
+}
 
+header a.tel {
+	font-size:1.3em;
+	display:block;
+	float: right;
+	margin-right:  1%;
+	color: #c53831!important; 
+	text-decoration:none;
+	text-align:right;
+	z-index: 999;
+}
+header ul.social {
+	margin: .5em 0 0 0;
+	float: right;
+	clear: right;	
+}
+header ul.social li {
+	float: left;
+	list-style-type:none;	
+}
+header ul.social li a {
+	width: 2.4em;
+	height: 2.4em;
+	display: block;
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	background-size:auto 90%;
+}
+header ul.social li.twitter a {background-image: url(../images/social_twitter.png);}
+header ul.social li.facebook a {background-image: url(../images/social_face.png);}
+header ul.social li.plus a {background-image: url(../images/social_plus.png);}
+header ul.social li.youtube a {background-image: url(../images/social_youtube.png);}
 
 
 
@@ -9,9 +51,22 @@
 
 /* --------------------------------- TABLET CSS --------------------------------- */
 @media only screen and (min-width: 40.063em) {
-	
-	
-	
+div.logo {
+    width: 157px;
+    height: 102px;
+    background-repeat: no-repeat;
+    margin-top: 1em;
+}	
+header a.tel {
+    font-size:1.6em;
+}
+header ul.social {margin-top: 1em;}
+header ul.social li a {
+    width: 3.1em;
+    height: 3.1em;
+    background-size:auto auto;
+}	
+
 	
 	
 	
@@ -23,7 +78,11 @@
 
 /* --------------------------------- DESKTOP CSS --------------------------------- */
 @media only screen and (min-width: 64.063em) {
-
+div.logo {
+    width: 207px;
+    height: 135px;
+    background-repeat: no-repeat;
+}
 	
 	
 } /*end desktop*/
