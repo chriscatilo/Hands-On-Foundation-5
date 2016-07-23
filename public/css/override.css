@@ -54,6 +54,8 @@ nav {
   background: #0a0a0a;
 }
 .top-bar li a { color: #fff; }
+.top-bar li { border-right: solid 1px #444; }
+.top-bar li.active { border-right: #0a0a0a; }
 .top-bar li.active a { background-color: #c53831;}
 
 /* --------------------------------- TABLET CSS --------------------------------- */
