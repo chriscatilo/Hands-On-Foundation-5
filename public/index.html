@@ -39,9 +39,16 @@
     <section class="top-bar" id="top-bar-section">
       <div class="column row">
         <div class="top-bar-left">
-          <ul class="vertical medium-horizontal menu">
+          <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
             <li class="active"><a href="index.html">About Us</a></li>
-            <li><a href="design.html">Design Principles</a></li>
+            <li class="has-submenu">
+              <a href="design.html">Design Principles</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="wayfinding.html">Wayfinding</a></li>
+                <li><a href="alignment.html">Alignment</a></li>
+                <li><a href="effect.html">Aesthetic-Useability Effect</a></li>
+              </ul>
+            </li>
             <li><a href="submission.html">Submission</a></li>
           </ul>
         </div>
