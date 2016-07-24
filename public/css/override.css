@@ -59,6 +59,10 @@ nav {
     height: 34px;
 }
 .row h1 { color: #c53831}
+section.photos li {
+    list-style: none; 
+    margin-bottom: 20px;
+}
 
 /* --------------------------------- TABLET CSS --------------------------------- */
 @media only screen and (min-width: 40.063em) {
