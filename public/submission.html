@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <!-- link to google font -->
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300,600' rel='stylesheet' type='text/css'>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation | Welcome</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/override.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="columns">
+        <div class="logo" data-interchange="[images/logoS.png, small],[images/logoM.png, medium],[images/logoL.png, large]"></div>
+        <a class="tel" tabindex="-1" href="tel:(801) 375-2228">(800) 555-1212</a>
+
+        <ul class="social">
+          <li class="twitter"><a href="http://twitter.com"><span class="hide">twitter</span></a></li>
+          <li class="facebook"><a href="http://facebook.com"><span class="hide">facebook</span></a></li>
+          <li class="plus"><a href="https://plus.google.com/"><span class="hide">google plus</span></a></li>
+          <li class="youtube"><a href="https://www.youtube.com/"><span class="hide">youtube</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section id="content">
+    <div data-sticky-container>
+      <nav data-sticky data-sticky-on="small" data-anchor="content" data-margin-top=0>
+        <div class="title-bar" data-responsive-toggle="top-bar-section" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+        <section class="top-bar" id="top-bar-section">
+          <div class="column row">
+            <div class="top-bar-left">
+              <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+                <li><a href="index.html">About Us</a></li>
+                <li class="has-submenu">
+                  <a href="design.html">Design Principles</a>
+                  <ul class="submenu menu vertical" data-submenu>
+                    <li><a href="wayfinding.html">Wayfinding</a></li>
+                    <li><a href="alignment.html">Alignment</a></li>
+                    <li><a href="effect.html">Aesthetic-Useability Effect</a></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="submission.html">Submission</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li>
+                  <form action="localsearch.php" method="get" enctype="multipart/form-data">
+                    <div class="row collapse">
+                      <div class="column small-9">
+                        <input type="text" name="search" placeholder="search...">
+                      </div>
+                      <div class="column small-3">
+                        <input type="submit" value="GO" class="small expanded button alert">
+                      </div>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="column small-12">
+        <h1>Gallary Submission</h1>
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec aliquet ipsum lorem, vehicula dignissim arcu
+          aliquet nec. Donec non pulvinar tellus. Suspendisse pellentesque facilisis sem. Etiam scelerisque orci ut lorem
+          dapibus tristique. Nunc euismod massa feugiat auctor euismod. Proin faucibus nec ipsum a accumsan.</p>
+      </div>
+    </div>
+
+    <form data-abide novalidate>
+      <div data-abide-error class="alert callout" style="display: none;">
+        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+      </div>
+      <div class="row">
+        <div class="small-12 columns">
+          <label>Number Required
+            <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+            <span class="form-error">
+              Yo, you had better fill this out, it's required.
+            </span>
+          </label>
+          <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+        </div>
+        <div class="small-12 columns">
+          <label>Nothing Required!
+            <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore>
+          </label>
+          <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using `data-abide-ignore`</p>
+        </div>
+        <div class="small-12 columns">
+          <label>Password Required
+            <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required >
+            <span class="form-error">
+              I'm required!
+            </span>
+          </label>
+          <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+        </div>
+        <div class="small-12 columns">
+          <label>Re-enter Password
+            <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+            <span class="form-error">
+              Hey, passwords are supposed to match!
+            </span>
+          </label>
+          <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 columns">
+          <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
+            <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
+          </label>
+        </div>
+        <div class="medium-6 columns">
+          <label>European Cars, Choose One, it can't be the blank option.
+        <select id="select" required>
+          <option value=""></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </label>
+        </div>
+      </div>
+      <div class="row">
+        <fieldset class="large-6 columns">
+          <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
+          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
+          <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+        </fieldset>
+        <fieldset class="large-6 columns">
+          <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
+          <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
+          <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
+          <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
+        </fieldset>
+        <fieldset class="large-6 columns">
+          <legend>Check these out</legend>
+          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="large-6 columns">
+          <button class="button" type="submit" value="Submit">Submit</button>
+        </fieldset>
+        <fieldset class="large-6 columns">
+          <button class="button" type="reset" value="Reset">Reset</button>
+        </fieldset>
+      </div>
+    </form>
+
+  </section>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
