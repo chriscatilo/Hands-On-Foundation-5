@@ -47,6 +47,7 @@ header ul.social li.youtube a {background-image: url(../images/social_youtube.pn
 nav {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: .8em;
+  width: 100%;
 }
 .top-bar, .top-bar ul, .top-bar li {
   background: #0a0a0a;
