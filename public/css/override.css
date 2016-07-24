@@ -63,6 +63,7 @@ section.photos li {
     list-style: none; 
     margin-bottom: 20px;
 }
+.callout { background-color: lightgray; border-radius: 10px; }
 
 /* --------------------------------- TABLET CSS --------------------------------- */
 @media only screen and (min-width: 40.063em) {
